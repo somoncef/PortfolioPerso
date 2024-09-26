@@ -144,6 +144,11 @@ export const DATA = {
         "Firebase", 
       ],
       links: [ 
+        {
+          type: "Source",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/somoncef/",
+        },
       ],
       image: "/gondif.jpeg",
       video: "",
@@ -164,6 +169,11 @@ export const DATA = {
         "Kaggle",
       ],
       links: [ 
+        {
+          type: "Source",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/somoncef/",
+        },
       ],
       image: "/bookreco.png",
       video: "",
@@ -185,6 +195,11 @@ export const DATA = {
         "Java",
       ],
       links: [ 
+        {
+          type: "Source",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/somoncef/fullstack-proj",
+        },
       ],
       image: "/luxcar.png",
       video: "",
