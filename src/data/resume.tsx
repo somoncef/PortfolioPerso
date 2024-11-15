@@ -8,7 +8,7 @@ export const DATA = {
   location: "Casablanca , morocco",
   locationLink: "",
   description:
-    "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.",
+    "Software Engineer | Machine Learning & Deep Learning Enthusiast . I love building things and helping people. Very active on Twitter.",
   summary:
     "I am a 23-year-old computer engineering student with a focus on computer methods applied to business management. I love competing in hackathons, building new projects, and discovering new technologies. I am currently pursuing a Master’s degree in Computer Engineering and am looking for a six-month internship starting in February 2024 to complete my end-of-study project. In addition to my passion for technology, I love sports, especially bodybuilding",
   avatarUrl: "/me2.jpg",
@@ -29,7 +29,7 @@ export const DATA = {
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "www.linkedin.com/in/monsif-souri",
+        url: "https://linkedin.com/in/monsif-souri",
         icon: Icons.linkedin,
 
         navbar: true,
@@ -101,7 +101,7 @@ export const DATA = {
   projects: [
     {
       title: "WebMorphers Agency",
-      href: "https://webmorphers.com",
+      href: "https://webmorphers.org",
       dates: "Ongoing",
       active: true,
       description:
@@ -130,6 +130,7 @@ export const DATA = {
     },
     {
       title: "GONDIF",
+      href: "https://github.com/somoncef/", 
       dates: "July 2023 - August 2023",
       active: true,
       description:
@@ -155,6 +156,8 @@ export const DATA = {
     },
     {
       title: "MEMORIAL", 
+      href: "https://github.com/somoncef/",
+
       dates: "April 2024 - Mai 2024",
       active: true,
       description:
@@ -180,7 +183,8 @@ export const DATA = {
     },
     {
       title: "Luxury Car Rental Website",
-       dates: "August 2023 - September 2023",
+      href: "https://github.com/somoncef/fullstack-proj", 
+      dates: "August 2023 - September 2023",
       active: true,
       description:
         "Collaborated with a friend to build a luxury car rental platform using Spring Boot for the backend and React.js for the frontend. The website allows users to browse available luxury cars, select rental dates, and book vehicles. We implemented user authentication and security features using Spring Security and JWT tokens for secure login. The site provides a seamless booking experience with a responsive design.",
@@ -221,7 +225,7 @@ export const DATA = {
           title: "Source",
           icon: <Icons.github className="h-4 w-4" />,
           href: "https://github.com/somoncef/Smart-city-Gestion-Materielle",
-        },
+        }, 
       ],
     }, 
     {
@@ -233,7 +237,28 @@ export const DATA = {
       image:
         "/hack2.png",
       links: [ 
+        {
+          title: "Source",
+          icon: <Icons.globe className="size-3" />,
+          href: "https://solarbiter.vercel.app",
+        },
       ],
     },  
+    {
+      title: "RADIOLOGY VISION AI - IEHF HACKATHON 2024",
+      dates: "in Progress",
+      location: "Casablanca, Morocco",
+      description:
+        "Radiology Vision AI is an intelligent platform based on artificial intelligence, specifically designed to improve image quality in radiology and optimize diagnostic processes. It focuses on advanced medical image management (CT, MRI, X-rays, etc.), leveraging AI algorithms to enhance resolution, reduce noise, and optimize medical imaging exams. The platform includes features such as noise reduction, resolution enhancement, CT image reconstruction, super-resolution for high-definition images, artifact detection and correction, multimodal image synthesis, image standardization, acquisition time reduction, advanced user interface, and data security measures.",
+      image:
+        "/ehealth.png",
+      links: [
+        {
+          title: "Source",
+          icon: <Icons.globe className="size-3" />,
+          href: "https://www.iehealthf.ma",
+        },
+      ],
+    }
   ],
 } as const;

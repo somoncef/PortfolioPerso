@@ -9,7 +9,7 @@ import { DATA } from "@/data/resume";
  import Link from "next/link";
 import Markdown from "react-markdown";
 
-const BLUR_FADE_DELAY = 0.07;
+const BLUR_FADE_DELAY = 0.04;
  
 export default function Page() {
   return (
@@ -198,27 +198,38 @@ export default function Page() {
       </section>
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 16}>
-            <div className="space-y-3">
-              <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                Contact
-              </div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                Get in Touch
-              </h2>
-              <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Want to chat? Just shoot me a dm{" "}
-                <Link
-                  href={DATA.contact.social.X.url}
-                  className="text-blue-500 hover:underline"
-                >
-                  with a direct question on twitter
-                </Link>{" "}
-                and I&apos;ll respond whenever I can. I will ignore all
-                soliciting.
-              </p>
-            </div>
-          </BlurFade>
+        <BlurFade delay={BLUR_FADE_DELAY * 16}>
+  <div className="space-y-3">
+    <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+      Contact
+    </div>
+    <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+      Get in Touch
+    </h2>
+    <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+      Want to chat? Just shoot me a dm{" "}
+      <Link
+        href={DATA.contact.social.X.url}
+        target="-blank"
+        className="text-blue-500 hover:underline"
+      >
+        with a direct question on Twitter
+      </Link>{" "}
+      and I&apos;ll respond whenever I can. I will ignore all soliciting.
+    </p>
+
+    <div className="mt-4">
+      <a
+        href="/cv_moncef_souri_ang_PFE.pdf"
+        download
+        className="inline-block px-6 py-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
+      >
+        Download Resume
+      </a>
+    </div>
+  </div>
+</BlurFade>
+
         </div>
       </section>
     </main>
