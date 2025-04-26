@@ -47,6 +47,12 @@ export const DATA = {
         icon: Icons.email, 
         navbar: false,
       },
+      Fiverr: {
+        name: "Fiverr",
+        url: "https://www.fiverr.com/webmorphers?public_mode=true",
+        icon: Icons.fiverr, 
+        navbar: true,
+      },
     },
   },
 
@@ -100,6 +106,37 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "GlamFlow AI: Skin Analysis and Product Recommendation",
+      href: "https://app.glamflow.ma",
+      dates: "Ongoing",
+      active: true,
+      description:
+        "This project leverages AI to analyze skin conditions and recommend personalized skincare products. Using cleaned and combined datasets, a YOLO model was trained to detect skin problems (e.g., acne, wrinkles), while a ResNet-based model classifies skin types (dry, normal, oily). The backend, built with Flask, processes images, runs predictions, and stores results in Supabase. The Next.js frontend provides a user-friendly interface, fetching product recommendations from Shopify based on the analysis. The solution is containerized with Docker for seamless deployment.",
+      technologies: [
+        "React",
+        "Next.js",
+        "Shopify SDK",  
+        "TailwindCSS",
+        "Python",
+        "Flask",
+        "Machine learning",
+        "Deep learning",
+        "Yolo11",
+        "Machine Visualization",
+        "OpenCV",
+        "Kaggle",
+        "Supabase"
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://app.glamflow.ma",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/AI.png", 
+    },
+    {
       title: "WebMorphers Agency",
       href: "https://webmorphers.org",
       dates: "Ongoing",
@@ -127,6 +164,55 @@ export const DATA = {
       ],
       image: "",
       video: "/agencyWebsiteOPT.mp4",
+    },
+    {
+      title: "beastopia - Solana P2E Website",
+      href: "https://beastopia.vercel.app", 
+      dates: "January 2025 ",
+      active: true,
+      description:
+        "Beastopia is a fictional, immersive world where mythical creatures, legendary beasts, and vibrant landscapes come alive. It’s a haven for adventurers and dreamers, offering thrilling quests, deep lore, and boundless exploration. Whether it’s taming wild beasts, uncovering ancient secrets, or forging alliances, Beastopia is a realm of wonder and endless possibilities.",
+      technologies: [
+        "React",
+        "Next.js",
+        "Node.js",
+        "TailwindCSS",
+        "Figma",
+        "shadcn"
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://beastopia.vercel.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/Beastopia.png", 
+      video: "",
+    },
+    {
+      title: "DogzApp - meme coin website",
+      href: "https://webmorphers.org",
+      dates: "January 2025 ",
+      active: true,
+      description:
+        "DogzApp is an innovative social platform designed exclusively for dog owners, combining community building, pet care, and blockchain-based rewards. The platform aims to create a vibrant ecosystem where dog lovers can connect, share experiences, and earn $BONES tokens—a native cryptocurrency—for engaging in activities like walking their dogs and discovering new walking routes.",
+      technologies: [
+        "React",
+        "Next.js",
+        "Node.js",
+        "TailwindCSS",
+        "shadcn"
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://dogzapplication.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/dogz1.png", 
+      video: "",
     },
     {
       title: "GONDIF",
