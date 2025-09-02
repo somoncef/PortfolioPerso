@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "Software Engineer | Machine Learning & Deep Learning Enthusiast . I love building things and helping people. Very active on Twitter.",
   summary:
-    "I am a 24-year-old computer engineering student with a focus on computer methods applied to business management. I love competing in hackathons, building new projects, and discovering new technologies. I am currently pursuing a Master’s degree in Computer Engineering and am looking for a six-month internship starting in February 2024 to complete my end-of-study project. In addition to my passion for technology, I love sports, especially bodybuilding",
+    "I am a 24-year-old software engineering graduate with a focus on computer methods applied to business management. I love competing in hackathons, building full-stack applications, and exploring new technologies, especially at the intersection of web development and artificial intelligence. I recently completed my Master’s degree in Computer Engineering and am actively seeking entry-level roles to kickstart my career in software development or machine learning. Beyond technology, I’m passionate about sports, particularly bodybuilding, which reflects my dedication to discipline, consistency, and continuous self-improvement.",
   avatarUrl: "/me2.jpg",
  skills: [ "React", "Next.js", "Typescript", "Node.js", "Python", "Postgres", "Docker", "Kubernetes", "Java", "C++", "Spring", "Spring Boot", "Django", "Tailwind CSS", "Microsoft .Net (C#)", "Javascript", "Microsoft SQL Server", "Oracle Database", "MongoDB", "MySQL", "Git", "GitHub", "Pandas", "Scikit-learn", "Hadoop", "Pig", "Hive" ],
   navbar: [
