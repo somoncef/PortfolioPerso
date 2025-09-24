@@ -15,6 +15,7 @@ export const DATA = {
  skills: [ "React", "Next.js", "Typescript", "Node.js", "Python", "Postgres", "Docker", "Kubernetes", "Java", "C++", "Spring", "Spring Boot", "Django", "Tailwind CSS", "Microsoft .Net (C#)", "Javascript", "Microsoft SQL Server", "Oracle Database", "MongoDB", "MySQL", "Git", "GitHub", "Pandas", "Scikit-learn", "Hadoop", "Pig", "Hive" ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
+    { href: "/blog", icon: NotebookIcon, label: "Blog" },
    ],
   contact: {
     email: "somoncef@gmail.com",
