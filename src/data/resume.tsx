@@ -59,27 +59,27 @@ export const DATA = {
 
   work: [
     {
+      company: "ABALSIA Consulting",
+      href: "https://abalsia.com",
+      badges: [],
+      location: "Casablanca Metropolitan Area",
+      title: "Software Engineering Intern",
+      logoUrl: "/abalsia-consulting.png",
+      start: "Feb 2025",
+      end: "Present",
+      description: "Currently contributing to the development of a full-stack public transport management application using Django REST Framework and Next.js with Material UI and TanStack. Implemented AI-assisted content generation using Azure OpenAI for multi-channel publication (Facebook, Twitter, SMS, website) and integrated Facebook Webhooks for real-time comment and reply management. Developed GTFS and GTFS-RT feed generation for real-time transport data. Participated in the implementation of role-based access control, Microsoft SSO authentication, password recovery, and system configuration modules following Scrum methodology."
+    },
+    {
       company: "Maghreb Rayonnage",
       href: "https://maghreb-rayonnage.ma",
       badges: [],
       location: "Casablanca Metropolitan Area",
-      title: "Full Stack Developer Internship",
+      title: "Software Engineering Intern",
       logoUrl: "/logo-maaa.ico",
       start: "Jul 2024",
       end: "Aug 2024",
       description:
         "During my internship, I developed a dynamic web application using Next.js and Node.js to automate the generation of customized reports (Cahier des Prescriptions Spéciales), reducing human errors and production times. I created an image scraping script for a B2B platform to retrieve product images based on names and transitioned client data management from paper forms to an online interface. Additionally, I implemented a user-friendly interface with Tailwind CSS and developed a scraping script using the Google Maps and Google Places APIs to gather information about businesses in industrial zones.",
-    },
-    {
-      company: "ABALSIA Consulting",
-      href: "https://abalsia.com",
-      badges: [],
-      location: "Casablanca Metropolitan Area",
-      title: "Full Stack Developer Internship",
-      logoUrl: "/abalsia-consulting.png",
-      start: "Feb 2025",
-      end: "Present",
-      description: "Currently contributing to the development of a full-stack public transport management application using Django REST Framework and Next.js with Material UI and TanStack. Implemented AI-assisted content generation using Azure OpenAI for multi-channel publication (Facebook, Twitter, SMS, website) and integrated Facebook Webhooks for real-time comment and reply management. Developed GTFS and GTFS-RT feed generation for real-time transport data. Participated in the implementation of role-based access control, Microsoft SSO authentication, password recovery, and system configuration modules following Scrum methodology."
     }
   ],
   education: [
@@ -87,7 +87,7 @@ export const DATA = {
       school: "Moroccan School of Engineering Sciences (EMSI)",
       href: "https://www.emsi.ma/",
       degree: "Master's degree in Computer Engineering and Networks, MIAGE option",
-      logoUrl: "/emsi2.jpeg",
+      logoUrl: "/emsilast.jpeg",
       start: "2022",
       end: "2025",
     },
@@ -107,14 +107,14 @@ export const DATA = {
       start: "2019",
       end: "2021",
     },
-    {
-      school: "Henri Matisse School Group",
-      href: "http://www.henrimatisse.ma/",
-      degree: "Baccalaureate in Physical Sciences and Chemistry",
-      logoUrl: "/henri.png",
-      start: "2015",
-      end: "2019",
-    },
+    // {
+    //   school: "Henri Matisse School Group",
+    //   href: "http://www.henrimatisse.ma/",
+    //   degree: "Baccalaureate in Physical Sciences and Chemistry",
+    //   logoUrl: "/henri.png",
+    //   start: "2015",
+    //   end: "2019",
+    // },
   ],
   projects: [
     {
