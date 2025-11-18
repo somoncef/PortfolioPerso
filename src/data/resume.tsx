@@ -118,6 +118,39 @@ export const DATA = {
   ],
   projects: [
     {
+  "title": "GlamFlow AI API: Skin Analysis & Product Recommendation API",
+  "href": "https://rapidapi.com/rabihmadtak-rabihmadtak-default/api/skin-analysis-api",
+  "dates": "Ongoing",
+  "active": true,
+  "description": "A production-ready AI API that analyzes skin conditions and classifies skin types using YOLO11 for skin problem detection (acne, wrinkles, dark spots) and ResNet for skin type classification (dry, normal, oily). Built with Flask and deployed on RapidAPI, featuring dermatologist-grade analysis, multi-language support (EN/FR), and real-time product recommendations via Shopify integration. Includes timeout protection, image optimization, and CORS support for seamless third-party integration.",
+  "technologies": [
+    "Python",
+    "Flask",
+    "YOLO11",
+    "ResNet",
+    "OpenCV",
+    "PyTorch",
+    "Machine Learning",
+    "Deep Learning",
+    "RapidAPI",
+    "Docker",
+    "CORS",
+    "JSON API",
+    "Groq AI",
+    "Threading",
+    "Image Processing"
+  ],
+  "links": [
+    {
+          type: "Website",
+          href: "https://rapidapi.com/rabihmadtak-rabihmadtak-default/api/skin-analysis-api",
+          icon: <Icons.globe className="size-3" />,
+        }
+  ],
+  "image": "/GlamflowRapidAPI.png",
+  "video": ""
+},
+    {
       title: "GlamFlow AI: Skin Analysis and Product Recommendation",
       href: "https://app.glamflow.ma",
       dates: "Ongoing",
