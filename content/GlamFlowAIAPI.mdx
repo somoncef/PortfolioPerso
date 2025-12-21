@@ -1,0 +1,151 @@
+---
+title: "Launching GlamFlow Skin Analysis API on RapidAPI"
+description: "How I built and launched GlamFlow, an AI-powered skin analysis API using YOLOv8, ResNet, and LLMs, and deployed it on RapidAPI with production-grade performance and security."
+summary: "A deep dive into building, optimizing, and launching an AI-powered skin analysis API on RapidAPI — covering architecture, challenges, and real-world results."
+publishedAt: "2025-12-20"
+updatedAt: "2025-12-20"
+author: "Monsif Souri"
+image: "/blog/glamflow/api-banner.png"
+canonical: "https://somoncef.me/blog/GlamFlowAIAPI"
+keywords:
+  - GlamFlow AI
+  - Skin analysis API
+  - AI skincare
+  - YOLOv8
+  - ResNet
+  - RapidAPI
+  - Machine Learning API
+  - Computer Vision
+  - LLM API
+  - Indie SaaS
+openGraph:
+  title: "Launching GlamFlow Skin Analysis API on RapidAPI"
+  description: "Inside the launch of GlamFlow — a production-ready AI skin analysis API built with YOLOv8, ResNet, and LLMs."
+  url: "https://somoncef.me/blog/GlamFlowAIAPI"
+  siteName: "Monsif Souri Portfolio"
+  images:
+    - url: "/blog/glamflow/api-banner.png"
+      width: 1200
+      height: 630
+      alt: "GlamFlow Skin Analysis API Architecture"
+  locale: "en_US"
+  type: "article"
+twitter:
+  card: "summary_large_image"
+  title: "Launching GlamFlow Skin Analysis API on RapidAPI"
+  description: "How I packaged an AI skin analysis engine into a production-ready API on RapidAPI."
+  image: "/blog/glamflow/api-banner.png"
+---
+
+
+# Launching GlamFlow Skin Analysis API on RapidAPI
+
+After building the [GlamFlow AI web app](https://somoncef.me/blog/GlamFlowAI) — an end-to-end skincare analysis platform powered by **YOLOv8**, **ResNet**, and **large language models** — I realized the real value wasn’t just the application itself, but **making the AI engine accessible to other developers**.
+
+So I packaged GlamFlow into a **production-ready REST API** and launched it on **RapidAPI**, allowing developers to integrate advanced skin analysis with a single HTTP request.
+
+👉 **[Try the GlamFlow Skin Analysis API on RapidAPI](https://rapidapi.com/rabihmadtak-rabihmadtak-default/api/skin-analysis-api)**
+
+<Image
+  src="/blog/glamflow/api-architecture.png"
+  alt="GlamFlow Skin Analysis API Architecture"
+  width={800}
+  height={400}
+/>
+
+## Why Build a Skin Analysis API?
+
+Beauty brands, telehealth platforms, and e-commerce startups increasingly rely on AI-driven personalization, but most lack in-house machine learning expertise.
+
+By exposing GlamFlow as an API, developers can:
+
+- Integrate **AI skin diagnostics** into mobile and web apps
+- Build **personalized skincare product recommenders**
+- Create **automated dermatology triage tools**
+
+All without managing ML infrastructure.
+
+## Core Features
+
+- 🧠 **Detection of 15+ skin conditions** (acne, blackheads, wrinkles, dark spots, etc.)
+- 💧 **Skin type classification** (dry, normal, oily) with confidence scores
+- 💬 **Multilingual AI advice** (English & French) powered by Groq + Llama 3.3
+- 📐 **Bounding box coordinates** for UI overlays or AR integrations
+- ⚡ **Sub-3 second average latency**, optimized for real-world usage
+
+## API Request Flow
+
+1. Client uploads a face image using `multipart/form-data`
+2. Image preprocessing: validation, resizing (max 1024px), and skin presence checks
+3. **Parallel AI inference pipeline**:
+   - YOLOv8 for skin issue detection and localization
+   - ResNet for skin type classification
+   - Groq-powered LLM for human-readable skincare recommendations
+4. Structured JSON response containing detections, analysis, and routine suggestions
+
+### Example API Request (cURL)
+
+```bash
+curl -X POST "https://skin-analysis-api.p.rapidapi.com/predict?lang=en" \
+  -H "X-RapidAPI-Key: YOUR_API_KEY" \
+  -H "X-RapidAPI-Host: skin-analysis-api.p.rapidapi.com" \
+  -F "file=@face.jpg"
+```
+
+## Example API Response
+
+<Image
+  src="/GlamflowRapidAPI.png"
+  alt="Exemple de réponse API GlamFlow (capture RapidAPI)"
+  width={800}
+  height={900}
+/>
+
+![Exemple de réponse API GlamFlow (capture RapidAPI)](/GlamflowRapidAPI.png)
+
+## Key Technical Challenges
+
+### File Uploads & RapidAPI Threat Protection
+Early versions returned 400 errors because RapidAPI's Threat Protection forwarded images as JSON-wrapped base64 in multipart/form-data. Solution: disable threat protection at the gateway and validate uploads at the application layer using RapidAPI proxy headers.
+
+### Performance Optimization
+To meet RapidAPI's timeout limits:
+- Parallelized YOLOv8 and ResNet inference
+- Warmed up models on startup
+- Timeout‑protected LLM calls with static fallbacks
+- Auto-resized large images (max 1024px)
+
+Result: 95th percentile latency dropped from ~12.4s to ~3.1s.
+
+### Adoption, Pricing & First Paying User
+- Monetized via RapidAPI subscription plans (Free, PRO, higher tiers)
+- First PRO subscriber acquired organically via the marketplace, validating demand.
+
+### Reliability & Stability
+- Continuous health checks and request logging
+- Graceful degradation when LLMs fail
+- Strict authentication via RapidAPI proxy headers
+
+Operational results for the first month: 99.97% uptime, sub‑3s average latency, zero critical incidents.
+
+### Who Is This API For?
+- Beauty & skincare brands
+- E‑commerce personalization engines
+- Telehealth & dermatology startups
+- Mobile app developers
+- Agencies delivering AI features
+
+### Key Lessons Learned
+- Distribution matters as much as the model
+- Developer experience drives adoption
+- Performance is critical for ML APIs
+- Monetization should be planned from day one
+
+## Try It Yourself
+
+
+[🔗 https://rapidapi.com/rabihmadtak-rabihmadtak-default/api/skin-analysis-api](https://rapidapi.com/rabihmadtak-rabihmadtak-default/api/skin-analysis-api)
+
+Built by Monsif Souri and [Othman Sohab](https://www.linkedin.com/in/othman-sohab/) — Software & Machine Learning Engineers.
+
+> This project is not a medical device. Always consult a dermatologist for persistent skin issues.
