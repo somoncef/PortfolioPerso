@@ -212,6 +212,33 @@ export const DATA = {
       video: "/agencyWebsiteOPT.mp4",
     },
     {
+  "title": "Parabeyou - E-commerce Beauty Store",
+  "href": "https://parabeyou.com",
+  "dates": "2025 – Present",
+  "active": true,
+  "description": "Designed, developed, and launched a fully customized Shopify store for Parabeyou, an online beauty retailer specializing in Korean and Japanese cosmetics. Implemented a responsive, visually rich theme with dynamic product filtering, custom metafields for scent/season/occasion, and seamless variant handling. Currently maintaining the store, including product updates, theme tweaks, performance optimization, and bug fixes to ensure smooth customer experience and sales conversion.",
+  "technologies": [
+    "Shopify",
+    "Shopify Liquid",
+    "HTML/CSS",
+    "JavaScript",
+    "TailwindCSS",
+    "Figma",
+    "Metafields",
+    "Shopify Admin API",
+    "SEO Optimization"
+  ],
+  "links": [
+    {
+      "type": "Website",
+      "href": "https://parabeyou.com",
+      "icon": "<Icons.globe className=\"size-3\" />"
+    }
+  ],
+  "image": "",
+  "video": "/parabeyou.webm"
+},
+    {
       title: "beastopia - Solana P2E Website",
       href: "https://beastopia.vercel.app", 
       dates: "January 2025 ",
