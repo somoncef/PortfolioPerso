@@ -66,7 +66,7 @@ export const DATA = {
       title: "Software Engineering Intern",
       logoUrl: "/abalsia-consulting.png",
       start: "Feb 2025",
-      end: "Present",
+      end: "Oct 2025",
       description: "Currently contributing to the development of a full-stack public transport management application using Django REST Framework and Next.js with Material UI and TanStack. Implemented AI-assisted content generation using Azure OpenAI for multi-channel publication (Facebook, Twitter, SMS, website) and integrated Facebook Webhooks for real-time comment and reply management. Developed GTFS and GTFS-RT feed generation for real-time transport data. Participated in the implementation of role-based access control, Microsoft SSO authentication, password recovery, and system configuration modules following Scrum methodology."
     },
     {
@@ -212,12 +212,12 @@ export const DATA = {
       video: "/agencyWebsiteOPT.mp4",
     },
     {
-  "title": "Parabeyou - E-commerce Beauty Store",
-  "href": "https://parabeyou.com",
-  "dates": "2025 – Present",
-  "active": true,
-  "description": "Designed, developed, and launched a fully customized Shopify store for Parabeyou, an online beauty retailer specializing in Korean and Japanese cosmetics. Implemented a responsive, visually rich theme with dynamic product filtering, custom metafields for scent/season/occasion, and seamless variant handling. Currently maintaining the store, including product updates, theme tweaks, performance optimization, and bug fixes to ensure smooth customer experience and sales conversion.",
-  "technologies": [
+  title: "Parabeyou - E-commerce Beauty Store",
+  href: "https://parabeyou.com",
+  dates: "2025 – Present",
+  active: true,
+  description: "Designed, developed, and launched a fully customized Shopify store for Parabeyou, an online beauty retailer specializing in Korean and Japanese cosmetics. Implemented a responsive, visually rich theme with dynamic product filtering, custom metafields for scent/season/occasion, and seamless variant handling. Currently maintaining the store, including product updates, theme tweaks, performance optimization, and bug fixes to ensure smooth customer experience and sales conversion.",
+  technologies: [
     "Shopify",
     "Shopify Liquid",
     "HTML/CSS",
@@ -228,15 +228,15 @@ export const DATA = {
     "Shopify Admin API",
     "SEO Optimization"
   ],
-  "links": [
+  links: [
     {
-      "type": "Website",
-      "href": "https://parabeyou.com",
-      "icon": "<Icons.globe className=\"size-3\" />"
-    }
+      type: "Website",
+      href: "https://parabeyou.com",
+      icon: <Icons.globe className="size-3" />,
+    },
   ],
-  "image": "",
-  "video": "/parabeyou.webm"
+  image: "",
+  video: "/parabeyou.webm"
 },
     {
       title: "beastopia - Solana P2E Website",
