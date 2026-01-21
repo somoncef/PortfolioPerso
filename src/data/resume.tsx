@@ -12,11 +12,46 @@ export const DATA = {
   summary:
     "I am a 24-year-old software engineering graduate with a focus on computer methods applied to business management. I love competing in hackathons, building full-stack applications, and exploring new technologies, especially at the intersection of web development and artificial intelligence. I recently completed my Master’s degree in Computer Engineering and am actively seeking entry-level roles to kickstart my career in software development or machine learning. Beyond technology, I’m passionate about sports, particularly bodybuilding, which reflects my dedication to discipline, consistency, and continuous self-improvement.",
   avatarUrl: "/me2.jpg",
- skills: [ "React", "Next.js", "Typescript", "Node.js", "Python", "Postgres", "Docker", "Kubernetes", "Java", "C++", "Spring", "Spring Boot", "Django", "Tailwind CSS", "Microsoft .Net (C#)", "Javascript", "Microsoft SQL Server", "Oracle Database", "MongoDB", "MySQL", "Git", "GitHub", "Pandas", "Scikit-learn", "Hadoop", "Pig", "Hive" ],
+  skills: [
+    "React",
+    "Next.js",
+    "Typescript",
+    "Node.js",
+    "Python",
+    "Postgres",
+    "Docker",
+    "Kubernetes",
+    "Java",
+    "C++",
+    "Spring",
+    "Spring Boot",
+    "Django",
+    "Tailwind CSS",
+    "Microsoft .Net (C#)",
+    "Javascript",
+    "Microsoft SQL Server",
+    "Oracle Database",
+    "MongoDB",
+    "MySQL",
+    "Git",
+    "GitHub",
+    "Pandas",
+    "Scikit-learn",
+    "Hadoop",
+    "Pig",
+    "Hive",
+
+    // Testing (added)
+    "Jest",
+    "Selenium",
+    "Unit Testing",
+    "End-to-End (E2E) Testing",
+  ],
+
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
-   ],
+  ],
   contact: {
     email: "somoncef@gmail.com",
     tel: "+212 688167585",
@@ -25,38 +60,36 @@ export const DATA = {
         name: "GitHub",
         url: "https://github.com/somoncef",
         icon: Icons.github,
-
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
         url: "https://linkedin.com/in/monsif-souri",
         icon: Icons.linkedin,
-
         navbar: true,
       },
       X: {
         name: "X",
         url: "https://x.com/souri_moncef",
         icon: Icons.x,
-
         navbar: true,
       },
       email: {
         name: "Send Email",
         url: "#",
-        icon: Icons.email, 
+        icon: Icons.email,
         navbar: false,
       },
       Fiverr: {
         name: "Fiverr",
         url: "https://www.fiverr.com/webmorphers?public_mode=true",
-        icon: Icons.fiverr, 
+        icon: Icons.fiverr,
         navbar: true,
       },
     },
   },
 
+  // UPDATED: added testing keywords in descriptions (Jest / Selenium / unit tests / E2E)
   work: [
     {
       company: "ABALSIA Consulting",
@@ -67,7 +100,8 @@ export const DATA = {
       logoUrl: "/abalsia-consulting.png",
       start: "Feb 2025",
       end: "Oct 2025",
-      description: "Currently contributing to the development of a full-stack public transport management application using Django REST Framework and Next.js with Material UI and TanStack. Implemented AI-assisted content generation using Azure OpenAI for multi-channel publication (Facebook, Twitter, SMS, website) and integrated Facebook Webhooks for real-time comment and reply management. Developed GTFS and GTFS-RT feed generation for real-time transport data. Participated in the implementation of role-based access control, Microsoft SSO authentication, password recovery, and system configuration modules following Scrum methodology."
+      description:
+        "Currently contributing to the development of a full-stack public transport management application using Django REST Framework and Next.js with Material UI and TanStack. Implemented AI-assisted content generation using Azure OpenAI for multi-channel publication (Facebook, Twitter, SMS, website) and integrated Facebook Webhooks for real-time comment and reply management. Developed GTFS and GTFS-RT feed generation for real-time transport data. Participated in the implementation of role-based access control, Microsoft SSO authentication, password recovery, and system configuration modules following Scrum methodology. Also worked on unit testing (Django) and end-to-end (E2E) testing using Selenium.",
     },
     {
       company: "Maghreb Rayonnage",
@@ -79,9 +113,10 @@ export const DATA = {
       start: "Jul 2024",
       end: "Aug 2024",
       description:
-        "During my internship, I developed a dynamic web application using Next.js and Node.js to automate the generation of customized reports (Cahier des Prescriptions Spéciales), reducing human errors and production times. I created an image scraping script for a B2B platform to retrieve product images based on names and transitioned client data management from paper forms to an online interface. Additionally, I implemented a user-friendly interface with Tailwind CSS and developed a scraping script using the Google Maps and Google Places APIs to gather information about businesses in industrial zones.",
-    }
+        "During my internship, I developed a dynamic web application using Next.js and Node.js to automate the generation of customized reports (Cahier des Prescriptions Spéciales), reducing human errors and production times. I created an image scraping script for a B2B platform to retrieve product images based on names and transitioned client data management from paper forms to an online interface. Additionally, I implemented a user-friendly interface with Tailwind CSS and developed a scraping script using the Google Maps and Google Places APIs to gather information about businesses in industrial zones. Implemented unit tests with Jest and used Selenium for web scraping / browser automation.",
+    },
   ],
+
   education: [
     {
       school: "Moroccan School of Engineering Sciences (EMSI)",
@@ -116,40 +151,43 @@ export const DATA = {
     //   end: "2019",
     // },
   ],
+
+  // OPTIONAL: if you want, you can add Jest/Selenium in project technologies
   projects: [
     {
-  "title": "GlamFlow AI API: Skin Analysis & Product Recommendation API",
-  "href": "https://rapidapi.com/rabihmadtak-rabihmadtak-default/api/skin-analysis-api",
-  "dates": "Ongoing",
-  "active": true,
-  "description": "A production-ready AI API that analyzes skin conditions and classifies skin types using YOLO11 for skin problem detection (acne, wrinkles, dark spots) and ResNet for skin type classification (dry, normal, oily). Built with Flask and deployed on RapidAPI, featuring dermatologist-grade analysis, multi-language support (EN/FR), and real-time product recommendations via Shopify integration. Includes timeout protection, image optimization, and CORS support for seamless third-party integration.",
-  "technologies": [
-    "Python",
-    "Flask",
-    "YOLO11",
-    "ResNet",
-    "OpenCV",
-    "PyTorch",
-    "Machine Learning",
-    "Deep Learning",
-    "RapidAPI",
-    "Docker",
-    "CORS",
-    "JSON API",
-    "Groq AI",
-    "Threading",
-    "Image Processing"
-  ],
-  "links": [
-    {
+      title: "GlamFlow AI API: Skin Analysis & Product Recommendation API",
+      href: "https://rapidapi.com/rabihmadtak-rabihmadtak-default/api/skin-analysis-api",
+      dates: "Ongoing",
+      active: true,
+      description:
+        "A production-ready AI API that analyzes skin conditions and classifies skin types using YOLO11 for skin problem detection (acne, wrinkles, dark spots) and ResNet for skin type classification (dry, normal, oily). Built with Flask and deployed on RapidAPI, featuring dermatologist-grade analysis, multi-language support (EN/FR), and real-time product recommendations via Shopify integration. Includes timeout protection, image optimization, and CORS support for seamless third-party integration.",
+      technologies: [
+        "Python",
+        "Flask",
+        "YOLO11",
+        "ResNet",
+        "OpenCV",
+        "PyTorch",
+        "Machine Learning",
+        "Deep Learning",
+        "RapidAPI",
+        "Docker",
+        "CORS",
+        "JSON API",
+        "Groq AI",
+        "Threading",
+        "Image Processing",
+      ],
+      links: [
+        {
           type: "Website",
           href: "https://rapidapi.com/rabihmadtak-rabihmadtak-default/api/skin-analysis-api",
           icon: <Icons.globe className="size-3" />,
-        }
-  ],
-  "image": "/GlamflowRapidAPI.png",
-  "video": ""
-},
+        },
+      ],
+      image: "/GlamflowRapidAPI.png",
+      video: "",
+    },
     {
       title: "GlamFlow AI: Skin Analysis and Product Recommendation",
       href: "https://app.glamflow.ma",
@@ -160,7 +198,7 @@ export const DATA = {
       technologies: [
         "React",
         "Next.js",
-        "Shopify SDK",  
+        "Shopify SDK",
         "TailwindCSS",
         "Python",
         "Flask",
@@ -170,7 +208,7 @@ export const DATA = {
         "Machine Visualization",
         "OpenCV",
         "Kaggle",
-        "Supabase"
+        "Supabase",
       ],
       links: [
         {
@@ -179,7 +217,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/AI.png", 
+      image: "/AI.png",
       video: "",
     },
     {
@@ -212,47 +250,41 @@ export const DATA = {
       video: "/agencyWebsiteOPT.mp4",
     },
     {
-  title: "Parabeyou - E-commerce Beauty Store",
-  href: "https://parabeyou.com",
-  dates: "2025 – Present",
-  active: true,
-  description: "Designed, developed, and launched a fully customized Shopify store for Parabeyou, an online beauty retailer specializing in Korean and Japanese cosmetics. Implemented a responsive, visually rich theme with dynamic product filtering, custom metafields for scent/season/occasion, and seamless variant handling. Currently maintaining the store, including product updates, theme tweaks, performance optimization, and bug fixes to ensure smooth customer experience and sales conversion.",
-  technologies: [
-    "Shopify",
-    "Shopify Liquid",
-    "HTML/CSS",
-    "JavaScript",
-    "TailwindCSS",
-    "Figma",
-    "Metafields",
-    "Shopify Admin API",
-    "SEO Optimization"
-  ],
-  links: [
-    {
-      type: "Website",
+      title: "Parabeyou - E-commerce Beauty Store",
       href: "https://parabeyou.com",
-      icon: <Icons.globe className="size-3" />,
+      dates: "2025 – Present",
+      active: true,
+      description:
+        "Designed, developed, and launched a fully customized Shopify store for Parabeyou, an online beauty retailer specializing in Korean and Japanese cosmetics. Implemented a responsive, visually rich theme with dynamic product filtering, custom metafields for scent/season/occasion, and seamless variant handling. Currently maintaining the store, including product updates, theme tweaks, performance optimization, and bug fixes to ensure smooth customer experience and sales conversion.",
+      technologies: [
+        "Shopify",
+        "Shopify Liquid",
+        "HTML/CSS",
+        "JavaScript",
+        "TailwindCSS",
+        "Figma",
+        "Metafields",
+        "Shopify Admin API",
+        "SEO Optimization",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://parabeyou.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "/parabeyou.webm",
     },
-  ],
-  image: "",
-  video: "/parabeyou.webm"
-},
     {
       title: "beastopia - Solana P2E Website",
-      href: "https://beastopia.vercel.app", 
+      href: "https://beastopia.vercel.app",
       dates: "January 2025 ",
       active: true,
       description:
         "Beastopia is a fictional, immersive world where mythical creatures, legendary beasts, and vibrant landscapes come alive. It’s a haven for adventurers and dreamers, offering thrilling quests, deep lore, and boundless exploration. Whether it’s taming wild beasts, uncovering ancient secrets, or forging alliances, Beastopia is a realm of wonder and endless possibilities.",
-      technologies: [
-        "React",
-        "Next.js",
-        "Node.js",
-        "TailwindCSS",
-        "Figma",
-        "shadcn"
-      ],
+      technologies: ["React", "Next.js", "Node.js", "TailwindCSS", "Figma", "shadcn"],
       links: [
         {
           type: "Website",
@@ -260,7 +292,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/Beastopia.png", 
+      image: "/Beastopia.png",
       video: "",
     },
     {
@@ -270,13 +302,7 @@ export const DATA = {
       active: true,
       description:
         "DogzApp is an innovative social platform designed exclusively for dog owners, combining community building, pet care, and blockchain-based rewards. The platform aims to create a vibrant ecosystem where dog lovers can connect, share experiences, and earn $BONES tokens—a native cryptocurrency—for engaging in activities like walking their dogs and discovering new walking routes.",
-      technologies: [
-        "React",
-        "Next.js",
-        "Node.js",
-        "TailwindCSS",
-        "shadcn"
-      ],
+      technologies: ["React", "Next.js", "Node.js", "TailwindCSS", "shadcn"],
       links: [
         {
           type: "Website",
@@ -284,26 +310,18 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/dogz1.png", 
+      image: "/dogz1.png",
       video: "",
     },
     {
       title: "GONDIF",
-      href: "https://github.com/somoncef/", 
+      href: "https://github.com/somoncef/",
       dates: "July 2023 - August 2023",
       active: true,
       description:
         "Collaborated with a team to develop a Progressive Web App (PWA) that allows users to easily book car wash services. The client can specify their location through the app, and a dedicated team arrives with the necessary equipment to wash the car at the specified location, whether in a garage or a parking spot.",
-      technologies: [
-        "Next.js",
-        "PWA",
-        "TailwindCSS",
-        "MapBox API",
-        "Node.js",
-        "React",
-        "Firebase", 
-      ],
-      links: [ 
+      technologies: ["Next.js", "PWA", "TailwindCSS", "MapBox API", "Node.js", "React", "Firebase"],
+      links: [
         {
           type: "Source",
           icon: <Icons.github className="h-4 w-4" />,
@@ -314,23 +332,14 @@ export const DATA = {
       video: "",
     },
     {
-      title: "MEMORIAL", 
+      title: "MEMORIAL",
       href: "https://github.com/somoncef/",
-
       dates: "April 2024 - Mai 2024",
       active: true,
       description:
         "Developed an online bookstore where users can purchase books and receive personalized book recommendations based on their purchase history. We trained a recommendation model using data from Kaggle and employed the K-Nearest Neighbors algorithm for precise suggestions. The data was preprocessed and cleaned for better accuracy, and the model was trained using a 70/30 train-test split in Jupyter Notebook.",
-      technologies: [
-        "Django",
-        "Python",
-        "Scikit-learn",
-        "Jupyter Notebook",
-        "My SQL",
-        "Bootstrap",
-        "Kaggle",
-      ],
-      links: [ 
+      technologies: ["Django", "Python", "Scikit-learn", "Jupyter Notebook", "My SQL", "Bootstrap", "Kaggle"],
+      links: [
         {
           type: "Source",
           icon: <Icons.github className="h-4 w-4" />,
@@ -342,22 +351,13 @@ export const DATA = {
     },
     {
       title: "Luxury Car Rental Website",
-      href: "https://github.com/somoncef/fullstack-proj", 
+      href: "https://github.com/somoncef/fullstack-proj",
       dates: "August 2023 - September 2023",
       active: true,
       description:
         "Collaborated with a friend to build a luxury car rental platform using Spring Boot for the backend and React.js for the frontend. The website allows users to browse available luxury cars, select rental dates, and book vehicles. We implemented user authentication and security features using Spring Security and JWT tokens for secure login. The site provides a seamless booking experience with a responsive design.",
-      technologies: [
-        "React.js",
-        "Spring Boot",
-        "Spring Security",
-        "JWT",
-        "TailwindCSS",
-        "PostgreSQL",
-        "REST API",
-        "Java",
-      ],
-      links: [ 
+      technologies: ["React.js", "Spring Boot", "Spring Security", "JWT", "TailwindCSS", "PostgreSQL", "REST API", "Java"],
+      links: [
         {
           type: "Source",
           icon: <Icons.github className="h-4 w-4" />,
@@ -367,50 +367,46 @@ export const DATA = {
       image: "/luxcar.png",
       video: "",
     },
-    
-    
   ],
-  hackathons: [ 
+
+  hackathons: [
     {
       title: "MEDITERRANEAN SMART CITIES HACKATHON",
       dates: "May 2nd, 2024",
       location: "TETOUAN, Morocco",
       description:
         "During the hackathon, our team developed a system to monitor street lamps using street cameras. When a street lamp goes off, a notification is sent to a technician via a mobile app we built using Java Mobile. Additionally, we created an admin app using Next.js, allowing administrators to assign zones to teams—ensuring that only the responsible team receives notifications for their designated zone. We also implemented a prioritization feature that guides technicians to prioritize lamps in high-traffic and high-crime areas. Firebase was used as the backend to manage real-time data and notifications.",
-      image:
-        "/hackathon 1.png",
+      image: "/hackathon 1.png",
       links: [
         {
           title: "Source",
           icon: <Icons.github className="h-4 w-4" />,
           href: "https://github.com/somoncef/Smart-city-Gestion-Materielle",
-        }, 
+        },
       ],
-    }, 
+    },
     {
       title: "Orbis HOUSE HACKATHON",
       dates: "Sep 23rd, 2024",
       location: "Casablanca, Morocco",
       description:
         "In This hackathon, our team developed an arbitrage bot on the Solana blockchain. The bot scans decentralized exchange (DEX) pools for price differences in a given token. When it finds an opportunity, it executes smart contracts to buy the token from the cheaper pool and sell it in the more expensive one, using high-frequency trading strategies to maximize profits. We built the smart contracts in TypeScript, and the app, which allows users to input token addresses and search for arbitrage opportunities, was developed in Next.js, leveraging APIs from the DEXs.",
-      image:
-        "/hack2.png",
-      links: [ 
+      image: "/hack2.png",
+      links: [
         {
           title: "Source",
           icon: <Icons.globe className="size-3" />,
           href: "https://solarbiter.vercel.app",
         },
       ],
-    },  
+    },
     {
       title: "RADIOLOGY VISION AI - IEHF HACKATHON 2024",
       dates: "in Progress",
       location: "Casablanca, Morocco",
       description:
         "Radiology Vision AI is an intelligent platform based on artificial intelligence, specifically designed to improve image quality in radiology and optimize diagnostic processes. It focuses on advanced medical image management (CT, MRI, X-rays, etc.), leveraging AI algorithms to enhance resolution, reduce noise, and optimize medical imaging exams. The platform includes features such as noise reduction, resolution enhancement, CT image reconstruction, super-resolution for high-definition images, artifact detection and correction, multimodal image synthesis, image standardization, acquisition time reduction, advanced user interface, and data security measures.",
-      image:
-        "/ehealth.png",
+      image: "/ehealth.png",
       links: [
         {
           title: "Source",
@@ -418,6 +414,6 @@ export const DATA = {
           href: "https://www.iehealthf.ma",
         },
       ],
-    }
+    },
   ],
 } as const;
