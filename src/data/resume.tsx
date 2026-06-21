@@ -8,9 +8,9 @@ export const DATA = {
   location: "Casablanca , morocco",
   locationLink: "",
   description:
-    "Software Engineer | Machine Learning & Deep Learning Enthusiast . I love building things and helping people. Very active on Twitter.",
+    "Full-Stack Software Engineer | Web Development & AI. I build scalable applications and internal tools that solve real business problems.",
   summary:
-    "I am a 24-year-old software engineering graduate with a focus on computer methods applied to business management. I love competing in hackathons, building full-stack applications, and exploring new technologies, especially at the intersection of web development and artificial intelligence. I recently completed my Master’s degree in Computer Engineering and am actively seeking entry-level roles to kickstart my career in software development or machine learning. Beyond technology, I’m passionate about sports, particularly bodybuilding, which reflects my dedication to discipline, consistency, and continuous self-improvement.",
+    "I am an experienced full-stack software engineer who enjoys building web applications, competing in hackathons, and exploring new technologies—especially where web development meets artificial intelligence. I currently work at ChronoDiali as a Full-Stack Software Engineer and IT Lead. Beyond technology, I’m passionate about sports, particularly bodybuilding, which reflects my dedication to discipline, consistency, and continuous self-improvement.",
   avatarUrl: "/me2.jpg",
   skills: [
     "React",
@@ -79,18 +79,24 @@ export const DATA = {
         url: "#",
         icon: Icons.email,
         navbar: false,
-      },
-      Fiverr: {
-        name: "Fiverr",
-        url: "https://www.fiverr.com/webmorphers?public_mode=true",
-        icon: Icons.fiverr,
-        navbar: true,
-      },
+      }
     },
   },
 
   // UPDATED: added testing keywords in descriptions (Jest / Selenium / unit tests / E2E)
   work: [
+    {
+      company: "ChronoDiali",
+      href: "",
+      badges: [],
+      location: "Morocco",
+      title: "Full-Stack Software Engineer / IT Lead",
+      logoUrl: "/chronodiali.png",
+      start: "Mar 2026",
+      end: "Present",
+      description:
+        "Architected and maintained logistics systems for e-commerce shipment management in Morocco. Developed internal tools using Next.js and Node.js/Python microservices to automate repetitive tasks, reducing manual errors by 40%. Led technical integrations and managed the full engineering lifecycle, from business requirements analysis to deployment and continuous optimization.",
+    },
     {
       company: "ABALSIA Consulting",
       href: "https://abalsia.com",
@@ -121,7 +127,8 @@ export const DATA = {
     {
       school: "Moroccan School of Engineering Sciences (EMSI)",
       href: "https://www.emsi.ma/",
-      degree: "Master's degree in Computer Engineering and Networks, MIAGE option",
+      degree:
+        "Master's degree in Computer Engineering and Networks, MIAGE option",
       logoUrl: "/emsilast.jpeg",
       start: "2022",
       end: "2025",
@@ -240,11 +247,7 @@ export const DATA = {
         "MapBox",
       ],
       links: [
-        {
-          type: "Website",
-          href: "https://webmorphers.org",
-          icon: <Icons.globe className="size-3" />,
-        },
+        
       ],
       image: "",
       video: "/agencyWebsiteOPT.mp4",
@@ -284,7 +287,14 @@ export const DATA = {
       active: true,
       description:
         "Beastopia is a fictional, immersive world where mythical creatures, legendary beasts, and vibrant landscapes come alive. It’s a haven for adventurers and dreamers, offering thrilling quests, deep lore, and boundless exploration. Whether it’s taming wild beasts, uncovering ancient secrets, or forging alliances, Beastopia is a realm of wonder and endless possibilities.",
-      technologies: ["React", "Next.js", "Node.js", "TailwindCSS", "Figma", "shadcn"],
+      technologies: [
+        "React",
+        "Next.js",
+        "Node.js",
+        "TailwindCSS",
+        "Figma",
+        "shadcn",
+      ],
       links: [
         {
           type: "Website",
@@ -320,7 +330,15 @@ export const DATA = {
       active: true,
       description:
         "Collaborated with a team to develop a Progressive Web App (PWA) that allows users to easily book car wash services. The client can specify their location through the app, and a dedicated team arrives with the necessary equipment to wash the car at the specified location, whether in a garage or a parking spot.",
-      technologies: ["Next.js", "PWA", "TailwindCSS", "MapBox API", "Node.js", "React", "Firebase"],
+      technologies: [
+        "Next.js",
+        "PWA",
+        "TailwindCSS",
+        "MapBox API",
+        "Node.js",
+        "React",
+        "Firebase",
+      ],
       links: [
         {
           type: "Source",
@@ -338,7 +356,15 @@ export const DATA = {
       active: true,
       description:
         "Developed an online bookstore where users can purchase books and receive personalized book recommendations based on their purchase history. We trained a recommendation model using data from Kaggle and employed the K-Nearest Neighbors algorithm for precise suggestions. The data was preprocessed and cleaned for better accuracy, and the model was trained using a 70/30 train-test split in Jupyter Notebook.",
-      technologies: ["Django", "Python", "Scikit-learn", "Jupyter Notebook", "My SQL", "Bootstrap", "Kaggle"],
+      technologies: [
+        "Django",
+        "Python",
+        "Scikit-learn",
+        "Jupyter Notebook",
+        "My SQL",
+        "Bootstrap",
+        "Kaggle",
+      ],
       links: [
         {
           type: "Source",
@@ -356,7 +382,16 @@ export const DATA = {
       active: true,
       description:
         "Collaborated with a friend to build a luxury car rental platform using Spring Boot for the backend and React.js for the frontend. The website allows users to browse available luxury cars, select rental dates, and book vehicles. We implemented user authentication and security features using Spring Security and JWT tokens for secure login. The site provides a seamless booking experience with a responsive design.",
-      technologies: ["React.js", "Spring Boot", "Spring Security", "JWT", "TailwindCSS", "PostgreSQL", "REST API", "Java"],
+      technologies: [
+        "React.js",
+        "Spring Boot",
+        "Spring Security",
+        "JWT",
+        "TailwindCSS",
+        "PostgreSQL",
+        "REST API",
+        "Java",
+      ],
       links: [
         {
           type: "Source",
@@ -402,7 +437,7 @@ export const DATA = {
     },
     {
       title: "RADIOLOGY VISION AI - IEHF HACKATHON 2024",
-      dates: "in Progress",
+      dates: "Oct 28rd, 2024",
       location: "Casablanca, Morocco",
       description:
         "Radiology Vision AI is an intelligent platform based on artificial intelligence, specifically designed to improve image quality in radiology and optimize diagnostic processes. It focuses on advanced medical image management (CT, MRI, X-rays, etc.), leveraging AI algorithms to enhance resolution, reduce noise, and optimize medical imaging exams. The platform includes features such as noise reduction, resolution enhancement, CT image reconstruction, super-resolution for high-definition images, artifact detection and correction, multimodal image synthesis, image standardization, acquisition time reduction, advanced user interface, and data security measures.",

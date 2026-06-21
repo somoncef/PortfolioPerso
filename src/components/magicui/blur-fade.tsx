@@ -14,18 +14,18 @@ interface BlurFadeProps {
   delay?: number;
   yOffset?: number;
   inView?: boolean;
-  inViewMargin?: string;
+  inViewMargin?: `${number}px`;
   blur?: string;
 }
 const BlurFade = ({
   children,
   className,
   variant,
-  duration = 0.4,
+  duration = 0.5,
   delay = 0,
   yOffset = 6,
   inView = false,
-  inViewMargin = "-50px",
+  inViewMargin = "-80px" as const,
   blur = "6px",
 }: BlurFadeProps) => {
   const ref = useRef(null);
@@ -33,7 +33,7 @@ const BlurFade = ({
   const isInView = !inView || inViewResult;
   const defaultVariants: Variants = {
     hidden: { y: yOffset, opacity: 0, filter: `blur(${blur})` },
-    visible: { y: -yOffset, opacity: 1, filter: `blur(0px)` },
+    visible: { y: 0, opacity: 1, filter: `blur(0px)` },
   };
   const combinedVariants = variant || defaultVariants;
   return (
@@ -45,9 +45,9 @@ const BlurFade = ({
         exit="hidden"
         variants={combinedVariants}
         transition={{
-          delay: 0.04 + delay,
+          delay: inView ? delay : 0.04 + delay,
           duration,
-          ease: "easeOut",
+          ease: [0.21, 0.47, 0.32, 0.98],
         }}
         className={className}
       >

@@ -1,3 +1,5 @@
+"use client";
+
 import { Badge } from "@/components/ui/badge";
 import {
   Card,
@@ -7,6 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import Markdown from "react-markdown";
@@ -41,11 +44,15 @@ export function ProjectCard({
   className,
 }: Props) {
   return (
-    <Card
-      className={
-        "flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full"
-      }
+    <motion.div
+      whileHover={{ y: -6 }}
+      transition={{ type: "spring", stiffness: 300, damping: 22 }}
     >
+      <Card
+        className={
+          "group flex h-full flex-col overflow-hidden border transition-shadow duration-300 ease-out hover:shadow-xl"
+        }
+      >
       <Link
         href={href || "#"}
         target="-blank"
@@ -58,17 +65,19 @@ export function ProjectCard({
             loop
             muted
             playsInline
-            className="pointer-events-none mx-auto h-40 w-full object-cover object-top" // needed because random black line at bottom of video
+            className="pointer-events-none mx-auto h-40 w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
           />
         )}
         {image && (
-          <Image
-            src={image}
-            alt={title}
-            width={700}
-            height={700}
-            className="h-40 w-full overflow-hidden object-cover object-top"
-          />
+          <div className="overflow-hidden">
+            <Image
+              src={image}
+              alt={title}
+              width={700}
+              height={700}
+              className="h-40 w-full overflow-hidden object-cover object-top transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
         )}
       </Link>
       <CardHeader className="px-2">
@@ -113,5 +122,6 @@ export function ProjectCard({
         )}
       </CardFooter>
     </Card>
+    </motion.div>
   );
 }

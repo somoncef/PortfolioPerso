@@ -29,7 +29,7 @@ export const ResumeCard = ({
   period,
   description,
 }: ResumeCardProps) => {
-  const [isExpanded, setIsExpanded] = React.useState(false);
+  const [isExpanded, setIsExpanded] = React.useState(true);
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     if (description) {
@@ -45,7 +45,11 @@ export const ResumeCard = ({
       className="block cursor-pointer"
       onClick={handleClick}
     >
-      <Card className="flex">
+      <motion.div
+        whileHover={{ scale: 1.01, y: -3 }}
+        transition={{ type: "spring", stiffness: 400, damping: 25 }}
+      >
+        <Card className="flex transition-shadow duration-300 hover:shadow-md">
         <div className="flex-none">
           <Avatar className="border size-12 m-auto bg-muted-background dark:bg-foreground">
             <AvatarImage
@@ -89,7 +93,7 @@ export const ResumeCard = ({
           </CardHeader>
           {description && (
             <motion.div
-              initial={{ opacity: 0, height: 0 }}
+              initial={false}
               animate={{
                 opacity: isExpanded ? 1 : 0,
 
@@ -106,6 +110,7 @@ export const ResumeCard = ({
           )}
         </div>
       </Card>
+      </motion.div>
     </Link>
   );
 };

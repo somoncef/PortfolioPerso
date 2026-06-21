@@ -1,5 +1,8 @@
+"use client";
+
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
+import { motion } from "framer-motion";
 import Link from "next/link";
 
 interface Props {
@@ -24,13 +27,21 @@ export function HackathonCard({
   links,
 }: Props) {
   return (
-    <li className="relative ml-10 py-4">
-      <div className="absolute -left-16 top-2 flex items-center justify-center bg-white rounded-full">
-        <Avatar className="border size-12 m-auto">
+    <motion.li
+      className="relative ml-10 py-4"
+      whileHover={{ x: 6 }}
+      transition={{ type: "spring", stiffness: 300, damping: 22 }}
+    >
+      <motion.div
+        className="absolute -left-16 top-2 flex items-center justify-center rounded-full bg-white dark:bg-background"
+        whileHover={{ scale: 1.12, rotate: 5 }}
+        transition={{ type: "spring", stiffness: 400, damping: 15 }}
+      >
+        <Avatar className="m-auto size-12 border">
           <AvatarImage src={image} alt={title} className="object-contain" />
           <AvatarFallback>{title[0]}</AvatarFallback>
         </Avatar>
-      </div>
+      </motion.div>
       <div className="flex flex-1 flex-col justify-start gap-1">
         {dates && (
           <time className="text-xs text-muted-foreground">{dates}</time>
@@ -40,7 +51,7 @@ export function HackathonCard({
           <p className="text-sm text-muted-foreground">{location}</p>
         )}
         {description && (
-          <span className="prose dark:prose-invert text-sm text-muted-foreground">
+          <span className="prose text-sm text-muted-foreground dark:prose-invert">
             {description}
           </span>
         )}
@@ -57,6 +68,6 @@ export function HackathonCard({
           ))}
         </div>
       )}
-    </li>
+    </motion.li>
   );
 }
