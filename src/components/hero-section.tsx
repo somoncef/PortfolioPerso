@@ -11,6 +11,9 @@ interface HeroSectionProps {
   initials: string;
   avatarUrl: string;
   description: string;
+  greeting: string;
+  buildPrefix: string;
+  flipWords: string[];
 }
 
 export function HeroSection({
@@ -18,9 +21,10 @@ export function HeroSection({
   initials,
   avatarUrl,
   description,
+  greeting,
+  buildPrefix,
+  flipWords,
 }: HeroSectionProps) {
-  const firstName = name.split(" ")[0];
-
   return (
     <section id="hero">
       <div className="mx-auto w-full max-w-2xl space-y-8">
@@ -30,20 +34,15 @@ export function HeroSection({
               delay={0.1}
               className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
               yOffset={8}
-              text={`Hi, I'm ${firstName} 👋`}
+              text={greeting}
               animateByCharacter
               characterDelay={0.025}
             />
             <BlurFade delay={0.35}>
               <p className="max-w-[600px] md:text-xl">
-                I build{" "}
+                {buildPrefix}{" "}
                 <FlipWords
-                  words={[
-                    "web apps",
-                    "AI tools",
-                    "full-stack products",
-                    "automation systems",
-                  ]}
+                  words={flipWords}
                   className="font-semibold text-foreground"
                 />
               </p>

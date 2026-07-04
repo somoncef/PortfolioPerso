@@ -1,6 +1,7 @@
 import Navbar from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { LocaleProvider } from "@/context/locale-provider";
 import { DATA } from "@/data/resume";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
     description: DATA.description,
     url: DATA.url,
     siteName: `${DATA.name}`,
-    locale: "en_US",
+    locale: "fr_FR",
     type: "website",
   },
   robots: {
@@ -55,20 +56,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="fr" suppressHydrationWarning>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased max-w-2xl mx-auto py-12 sm:py-24 px-6",
           fontSans.variable
         )}
       >
-                <Analytics /> 
+        <Analytics />
 
         <ThemeProvider attribute="class" defaultTheme="light">
-          <TooltipProvider delayDuration={0}>
-            {children}
-            <Navbar />
-          </TooltipProvider>
+          <LocaleProvider>
+            <TooltipProvider delayDuration={0}>
+              {children}
+              <Navbar />
+            </TooltipProvider>
+          </LocaleProvider>
         </ThemeProvider>
       </body>
     </html>

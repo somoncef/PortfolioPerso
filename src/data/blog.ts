@@ -14,6 +14,12 @@ type Metadata = {
   image?: string;
 };
 
+export type BlogPost = {
+  metadata: Metadata;
+  slug: string;
+  source: string;
+};
+
 function getMDXFiles(dir: string) {
   return fs.readdirSync(dir).filter((file) => path.extname(file) === ".mdx");
 }
@@ -48,14 +54,14 @@ export async function getPost(slug: string) {
   };
 }
 
-async function getAllPosts(dir: string) {
+async function getAllPosts(dir: string): Promise<BlogPost[]> {
   let mdxFiles = getMDXFiles(dir);
   return Promise.all(
     mdxFiles.map(async (file) => {
       let slug = path.basename(file, path.extname(file));
       let { metadata, source } = await getPost(slug);
       return {
-        metadata,
+        metadata: metadata as BlogPost["metadata"],
         slug,
         source,
       };
@@ -63,6 +69,6 @@ async function getAllPosts(dir: string) {
   );
 }
 
-export async function getBlogPosts() {
+export async function getBlogPosts(): Promise<BlogPost[]> {
   return getAllPosts(path.join(process.cwd(), "content"));
 }
