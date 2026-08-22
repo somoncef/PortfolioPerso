@@ -6,7 +6,7 @@ export const en = {
   description:
     "Full-Stack Software Engineer specializing in Spring Boot, Next.js, React & AI. I build scalable web applications and intelligent solutions that solve real business problems.",
   summary:
-    "I am an experienced full-stack software engineer focused on Spring Boot backends, Next.js and React frontends, and AI-powered products. I enjoy building web applications, competing in hackathons, and exploring new technologies—especially where modern web development meets artificial intelligence. I currently work at ChronoDiali as a Full-Stack Software Engineer and IT Lead. Beyond technology, I'm passionate about sports, particularly bodybuilding, which reflects my dedication to discipline, consistency, and continuous self-improvement.",
+    "I am an experienced full-stack software engineer focused on Spring Boot backends, Next.js and React frontends, and AI-powered products. I enjoy building web applications, competing in hackathons, and exploring new technologies—especially where modern web development meets artificial intelligence. I currently work at ChronoDiali as a Full-Stack Software Engineer. Beyond technology, I'm passionate about sports, particularly bodybuilding, which reflects my dedication to discipline, consistency, and continuous self-improvement.",
   skills: [
     "Spring Boot",
     "Next.js",
@@ -55,12 +55,12 @@ export const en = {
       href: "",
       badges: [] as string[],
       location: "Morocco",
-      title: "Full-Stack Software Engineer / IT Lead",
+      title: "Full-Stack Software Engineer",
       logoUrl: "/chronodiali.png",
       start: "Mar 2026",
       end: "Present",
       description:
-        "Architected and maintained logistics systems for e-commerce shipment management in Morocco. Developed internal tools using Next.js and React with Node.js/Python microservices to automate repetitive tasks, reducing manual errors by 40%. Led technical integrations and managed the full engineering lifecycle, from business requirements analysis to deployment and continuous optimization.",
+        "• Designed backend APIs and internal services for e-commerce shipment management (reliability, scalability).\n• Developed tools and dashboards (Python, Node.js, SQL, Next.js) for operations, finance, and support.\n• Built automation scripts, middleware, and third-party API integrations to improve the reliability of production workflows.",
     },
     {
       company: "ABALSIA Consulting",

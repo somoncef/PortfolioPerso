@@ -6,7 +6,7 @@ export const fr = {
   description:
     "Ingénieur Full-Stack spécialisé en Spring Boot, Next.js, React & IA. Je conçois des applications web évolutives et des solutions intelligentes qui résolvent de vrais problèmes métier.",
   summary:
-    "Je suis un ingénieur full-stack expérimenté, spécialisé dans les backends Spring Boot, les frontends Next.js et React, et les produits alimentés par l'intelligence artificielle. J'aime créer des applications web, participer à des hackathons et explorer les nouvelles technologies — en particulier à l'intersection du développement web moderne et de l'IA. Je travaille actuellement chez ChronoDiali en tant qu'ingénieur full-stack et responsable IT. En dehors de la technologie, je suis passionné par le sport, notamment la musculation, qui reflète mon engagement envers la discipline, la constance et l'amélioration continue.",
+    "Je suis un ingénieur full-stack expérimenté, spécialisé dans les backends Spring Boot, les frontends Next.js et React, et les produits alimentés par l'intelligence artificielle. J'aime créer des applications web, participer à des hackathons et explorer les nouvelles technologies — en particulier à l'intersection du développement web moderne et de l'IA. Je travaille actuellement chez ChronoDiali en tant qu'ingénieur logiciel full-stack. En dehors de la technologie, je suis passionné par le sport, notamment la musculation, qui reflète mon engagement envers la discipline, la constance et l'amélioration continue.",
   skills: [
     "Spring Boot",
     "Next.js",
@@ -55,12 +55,12 @@ export const fr = {
       href: "",
       badges: [] as string[],
       location: "Maroc",
-      title: "Ingénieur Full-Stack / Responsable IT",
+      title: "Ingénieur Logiciel Full-Stack",
       logoUrl: "/chronodiali.png",
       start: "Mars 2026",
       end: "Présent",
       description:
-        "Architecture et maintenance de systèmes logistiques pour la gestion des expéditions e-commerce au Maroc. Développement d'outils internes avec Next.js et React, ainsi que des microservices Node.js/Python pour automatiser les tâches répétitives, réduisant les erreurs manuelles de 40 %. Direction des intégrations techniques et gestion du cycle de vie complet, de l'analyse des besoins métier au déploiement et à l'optimisation continue.",
+        "• Conception d'APIs backend et de services internes pour la gestion des expéditions e-commerce (fiabilité, montée en charge).\n• Développement d'outils et tableaux de bord (Python, Node.js, SQL, Next.js) pour les opérations, la finance et le support.\n• Scripts d'automatisation, middlewares et intégration d'APIs tierces pour fiabiliser les flux en production.",
     },
     {
       company: "ABALSIA Consulting",
