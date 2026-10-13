@@ -4,19 +4,23 @@ import { SHARED } from "../shared";
 export const en = {
   ...SHARED,
   description:
-    "Full-Stack Software Engineer specializing in Spring Boot, Next.js, React & AI. I build scalable web applications and intelligent solutions that solve real business problems.",
+    "Full-Stack Software Engineer & Data Analyst specializing in Python, SQL, Power BI, Spring Boot and Next.js. I build data pipelines, dashboards, and scalable web applications that solve real business problems.",
   summary:
-    "I am an experienced full-stack software engineer focused on Spring Boot backends, Next.js and React frontends, and AI-powered products. I enjoy building web applications, competing in hackathons, and exploring new technologies—especially where modern web development meets artificial intelligence. I currently work at ChronoDiali as a Full-Stack Software Engineer. Beyond technology, I'm passionate about sports, particularly bodybuilding, which reflects my dedication to discipline, consistency, and continuous self-improvement.",
+    "I am a full-stack software engineer with a growing focus on data: building Power BI dashboards, automating data pipelines, and turning raw operational data into decisions. I enjoy building web applications, competing in hackathons, and exploring new technologies—especially where data analysis meets software engineering. I currently work at ChronoDiali as a Full-Stack Software Engineer, where I build internal tools, automation, and BI dashboards used by operations and sales teams nationwide. Beyond technology, I'm passionate about sports, particularly bodybuilding, which reflects my dedication to discipline, consistency, and continuous self-improvement.",
   skills: [
+    "Python",
+    "SQL",
+    "Power BI",
+    "DAX",
+    "Pandas",
+    "Scikit-learn",
+    "Machine Learning",
     "Spring Boot",
     "Next.js",
     "React",
     "TypeScript",
     "Java",
-    "Python",
     "PyTorch",
-    "Scikit-learn",
-    "Machine Learning",
     "Node.js",
     "Docker",
     "Kubernetes",
@@ -32,7 +36,6 @@ export const en = {
     "MySQL",
     "Git",
     "GitHub",
-    "Pandas",
     "Hadoop",
     "Pig",
     "Hive",
@@ -60,7 +63,7 @@ export const en = {
       start: "Mar 2026",
       end: "Present",
       description:
-        "• Designed backend APIs and internal services for e-commerce shipment management (reliability, scalability).\n• Developed tools and dashboards (Python, Node.js, SQL, Next.js) for operations, finance, and support.\n• Built automation scripts, middleware, and third-party API integrations to improve the reliability of production workflows.",
+        "• Designed Power BI dashboards for customer lifecycle segmentation (Active, Declining, At-Risk, Churned) used by the sales team to prioritize account outreach.\n• Built an SLA / delivery performance dashboard (Power BI, DAX) tracking breach rates by hub, route, and courier, including an origin-destination route map, for the operations team.\n• Exported and structured CRM and shipment data (SQL, Python) to build recurring KPI reports for operations, finance, and support.\n• Built Python/Node.js automation scripts and third-party API integrations to improve the reliability of production data workflows.",
     },
     {
       company: "ABALSIA Consulting",
@@ -391,10 +394,10 @@ export const en = {
     heroGreeting: (firstName: string) => `Hi, I'm ${firstName} 👋`,
     heroBuildPrefix: "I build",
     heroFlipWords: [
+      "Power BI dashboards",
       "Spring Boot APIs",
       "Next.js apps",
       "AI solutions",
-      "React products",
     ],
     about: "About",
     workExperience: "Work Experience",
@@ -403,7 +406,7 @@ export const en = {
     projectsBadge: "My Projects",
     projectsTitle: "Check out my latest work",
     projectsDescription:
-      "I've worked on a variety of projects, from AI-powered platforms to full-stack web applications with Spring Boot, Next.js, and React. Here are a few of my favorites.",
+      "I've worked on a variety of projects, from AI-powered platforms to data dashboards and full-stack web applications with Python, Power BI, Spring Boot, and Next.js. Here are a few of my favorites.",
     hackathonsBadge: "Hackathons",
     hackathonsTitle: "I like building things",
     hackathonsDescription: (count: number) =>
@@ -421,6 +424,6 @@ export const en = {
     language: "Language",
     blogTitle: "blog",
     blogMetaDescription:
-      "My thoughts on software development, life, and more.",
+      "My thoughts on software development, data, and more.",
   },
 };

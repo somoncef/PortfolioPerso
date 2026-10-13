@@ -4,19 +4,23 @@ import { SHARED } from "../shared";
 export const fr = {
   ...SHARED,
   description:
-    "Ingénieur Full-Stack spécialisé en Spring Boot, Next.js, React & IA. Je conçois des applications web évolutives et des solutions intelligentes qui résolvent de vrais problèmes métier.",
+    "Ingénieur Full-Stack & Data Analyst spécialisé en Python, SQL, Power BI, Spring Boot et Next.js. Je conçois des pipelines de données, des dashboards et des applications web évolutives qui résolvent de vrais problèmes métier.",
   summary:
-    "Je suis un ingénieur full-stack expérimenté, spécialisé dans les backends Spring Boot, les frontends Next.js et React, et les produits alimentés par l'intelligence artificielle. J'aime créer des applications web, participer à des hackathons et explorer les nouvelles technologies — en particulier à l'intersection du développement web moderne et de l'IA. Je travaille actuellement chez ChronoDiali en tant qu'ingénieur logiciel full-stack. En dehors de la technologie, je suis passionné par le sport, notamment la musculation, qui reflète mon engagement envers la discipline, la constance et l'amélioration continue.",
+    "Je suis un ingénieur full-stack avec un intérêt grandissant pour la data : conception de dashboards Power BI, automatisation de pipelines de données, et transformation de données opérationnelles brutes en décisions. J'aime créer des applications web, participer à des hackathons et explorer les nouvelles technologies — en particulier à l'intersection de l'analyse de données et du développement logiciel. Je travaille actuellement chez ChronoDiali en tant qu'ingénieur logiciel full-stack, où je conçois des outils internes, de l'automatisation et des dashboards BI utilisés par les équipes opérations et commerciales à l'échelle nationale. En dehors de la technologie, je suis passionné par le sport, notamment la musculation, qui reflète mon engagement envers la discipline, la constance et l'amélioration continue.",
   skills: [
+    "Python",
+    "SQL",
+    "Power BI",
+    "DAX",
+    "Pandas",
+    "Scikit-learn",
+    "Machine Learning",
     "Spring Boot",
     "Next.js",
     "React",
     "TypeScript",
     "Java",
-    "Python",
     "PyTorch",
-    "Scikit-learn",
-    "Machine Learning",
     "Node.js",
     "Docker",
     "Kubernetes",
@@ -32,7 +36,6 @@ export const fr = {
     "MySQL",
     "Git",
     "GitHub",
-    "Pandas",
     "Hadoop",
     "Pig",
     "Hive",
@@ -60,7 +63,7 @@ export const fr = {
       start: "Mars 2026",
       end: "Présent",
       description:
-        "• Conception d'APIs backend et de services internes pour la gestion des expéditions e-commerce (fiabilité, montée en charge).\n• Développement d'outils et tableaux de bord (Python, Node.js, SQL, Next.js) pour les opérations, la finance et le support.\n• Scripts d'automatisation, middlewares et intégration d'APIs tierces pour fiabiliser les flux en production.",
+        "• Conception de dashboards Power BI de segmentation client (Actif, En Baisse, À Risque, Churné) utilisés par l'équipe commerciale pour prioriser les relances.\n• Conception d'un dashboard de performance SLA/livraison (Power BI, DAX) suivant les taux de dépassement par hub, route et transporteur, avec une carte des trajets origine-destination, pour l'équipe opérations.\n• Export et structuration de données CRM et logistiques (SQL, Python) pour construire des rapports KPI récurrents pour les équipes opérations, finance et support.\n• Scripts d'automatisation Python/Node.js et intégrations d'APIs tierces pour fiabiliser les flux de données en production.",
     },
     {
       company: "ABALSIA Consulting",
@@ -391,10 +394,10 @@ export const fr = {
     heroGreeting: (firstName: string) => `Salut, je suis ${firstName} 👋`,
     heroBuildPrefix: "Je construis",
     heroFlipWords: [
+      "des dashboards Power BI",
       "des APIs Spring Boot",
       "des apps Next.js",
       "des solutions IA",
-      "des produits React",
     ],
     about: "À propos",
     workExperience: "Expérience professionnelle",
@@ -403,7 +406,7 @@ export const fr = {
     projectsBadge: "Mes projets",
     projectsTitle: "Découvrez mes derniers travaux",
     projectsDescription:
-      "J'ai travaillé sur une variété de projets, des plateformes alimentées par l'IA aux applications web full-stack avec Spring Boot, Next.js et React. Voici quelques-uns de mes favoris.",
+      "J'ai travaillé sur une variété de projets, des plateformes alimentées par l'IA aux dashboards de données et applications web full-stack avec Python, Power BI, Spring Boot et Next.js. Voici quelques-uns de mes favoris.",
     hackathonsBadge: "Hackathons",
     hackathonsTitle: "J'aime construire des choses",
     hackathonsDescription: (count: number) =>
@@ -421,6 +424,6 @@ export const fr = {
     language: "Langue",
     blogTitle: "blog",
     blogMetaDescription:
-      "Mes réflexions sur le développement logiciel, la vie et plus encore.",
+      "Mes réflexions sur le développement logiciel, la data et plus encore.",
   },
 };

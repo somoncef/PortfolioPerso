@@ -7,7 +7,7 @@ export const SHARED = {
   url: "https://somoncef.me",
   location: "Casablanca, Morocco",
   locationLink: "",
-  avatarUrl: "/me2.jpg",
+  avatarUrl: "/me3.png",
   contact: {
     email: "somoncef@gmail.com",
     tel: "+212 688167585",
